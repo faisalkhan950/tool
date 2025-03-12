@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Convert PDF and JPEG to Word with customizable image compression. A fast, free, and SEO-optimized tool for seamless file conversion.">
+    <meta name="keywords" content="PDF to Word, JPEG to Word, Image compression, File conversion tool">
+    <meta name="author" content="Your Name">
+    <title>PDF/JPEG to Word Converter</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+            text-align: center;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        main {
+            background: white;
+            padding: 30px;
+            margin: 20px auto;
+            border-radius: 8px;
+            max-width: 600px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        label, select, input, button {
+            display: block;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        input[type="file"] {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        select, button {
+            padding: 10px;
+            font-size: 1rem;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        #output {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .download-btn {
+            display: none;
+            background-color: #007BFF;
+            margin-top: 20px;
+        }
+        .download-btn:hover {
+            background-color: #0056b3;
+        }
+        .ads-section {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        footer {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 8px;
+        }
+        @media (max-width: 768px) {
+            main, .ads-section, footer {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>PDF/JPEG to Word Converter</h1>
+        <p>Convert your PDF and JPEG files to Word documents effortlessly.</p>
+    </header>
+
+    <main>
+        <section class="upload-section">
+            <label for="fileInput">Upload PDF or JPEG:</label>
+            <input type="file" id="fileInput" accept=".pdf, .jpeg, .jpg">
+        </section>
+
+        <section class="compression-section">
+            <label for="compressionLevel">Select Compression Level:</label>
+            <select id="compressionLevel">
+                <option value="high">High</option>
+                <option value="medium" selected>Medium</option>
+                <option value="low">Low</option>
+            </select>
+        </section>
+
+        <button id="convertButton">Convert to Word</button>
+        <div id="output"></div>
+        <button id="downloadButton" class="download-btn">Download Word File</button>
+    </main>
+
+    <aside class="ads-section">
+        <h2>Sponsored Ads</h2>
+        <!-- Google AdSense Ad Unit -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="4427419589"
+             data-ad-slot="ca-app-pub-4152566750885840/4912774697"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+    </aside>
+
+    <footer>
+        <p>&copy; 2025 PDF/JPEG to Word Converter. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('convertButton').addEventListener('click', function() {
+            const file = document.getElementById('fileInput').files[0];
+            const compression = document.getElementById('compressionLevel').value;
+            
+            if (!file) {
+                alert('Please upload a file first.');
+                return;
+            }
+
+            // Placeholder for conversion logic
+            document.getElementById('output').innerHTML = `File: ${file.name} converted with ${compression} compression.`;
+            document.getElementById('downloadButton').style.display = 'block';
+        });
+
+        document.getElementById('downloadButton').addEventListener('click', function() {
+            alert('Downloading your Word file...');
+            // Logic to trigger file download
+        });
+
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</body>
+</html>
