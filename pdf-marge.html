@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Merge and compress PDF files online. Optimize PDFs with adjustable compression levels and image optimization.">
+    <meta name="keywords" content="PDF Merger, PDF Compressor, Merge PDF, free online pdf compressor, pdf compress, online pdf marge, free pdf marge, free pdf compress, compressor pdf free,  Compress PDF, Online PDF Tool">
+    <meta name="author" content="Faisal Shabir">
+    <title>PDF Merger Tool - Merge and Compress PDFs Online</title>
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-app-pub-4152566750885840/5948560749" crossorigin="anonymous"></script>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin: 10px 0 0;
+            font-size: 1.1rem;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        section {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="file"] {
+            display: none;
+        }
+
+        .file-upload {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            display: inline-block;
+            margin-bottom: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .file-upload:hover {
+            background-color: #0056b3;
+        }
+
+        select {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            margin-bottom: 10px;
+            font-size: 1rem;
+        }
+
+        button {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        #download-link {
+            display: block;
+            margin-top: 20px;
+            color: #007bff;
+            text-decoration: none;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        #ad-unit-top, #ad-unit-bottom {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            margin-top: 40px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            header p {
+                font-size: 1rem;
+            }
+
+            .file-upload, button {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>PDF Merger Tool</h1>
+        <p>Merge and compress PDF files online with ease.</p>
+    </header>
+
+    <main>
+        <!-- Ad Unit (Top) -->
+        <section id="ad-unit-top">
+            <!-- Google AdSense Ad Unit -->
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-app-pub-4152566750885840/8999359364"
+                 data-ad-slot="YOUR_AD_UNIT_ID_TOP"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </section>
+
+        <!-- File Upload Section -->
+        <section id="upload-section">
+            <label for="pdf-files">Choose PDF Files:</label>
+            <div class="file-upload" onclick="document.getElementById('pdf-files').click()">Choose Files</div>
+            <input type="file" id="pdf-files" multiple accept="application/pdf">
+            <p id="file-names" style="font-size: 0.9rem; color: #666;">No files selected</p>
+        </section>
+
+        <!-- Compression Options -->
+        <section id="compression-section">
+            <label for="compression-level">Select Compression Level:</label>
+            <select id="compression-level">
+                <option value="low">Low</option>
+                <option value="medium" selected>Medium</option>
+                <option value="high">High</option>
+            </select>
+        </section>
+
+        <!-- Merge Button -->
+        <section>
+            <button id="merge-btn">Merge PDFs</button>
+        </section>
+
+        <!-- Ad Unit (Bottom) -->
+        <section id="ad-unit-bottom">
+            <!-- Google AdSense Ad Unit -->
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-app-pub-4152566750885840/3423599052"
+                 data-ad-slot="YOUR_AD_UNIT_ID_BOTTOM"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </section>
+
+        <!-- Output Section -->
+        <section id="output-section">
+            <a id="download-link" style="display:none;">Download Merged PDF</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 PDF Merger Tool. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Show selected file names
+        document.getElementById('pdf-files').addEventListener('change', function () {
+            const fileNames = Array.from(this.files).map(file => file.name).join(', ');
+            document.getElementById('file-names').textContent = fileNames || 'No files selected';
+        });
+
+        // Merge PDFs
+        document.getElementById('merge-btn').addEventListener('click', async () => {
+            const files = document.getElementById('pdf-files').files;
+            const compressionLevel = document.getElementById('compression-level').value;
+
+            if (files.length < 2) {
+                alert('Please select at least 2 PDF files to merge.');
+                return;
+            }
+
+            const formData = new FormData();
+            for (let i = 0; i < files.length; i++) {
+                formData.append('files', files[i]);
+            }
+            formData.append('compression', compressionLevel);
+
+            try {
+                const response = await fetch('https://api.pdf.co/v1/pdf/merge', {
+                    method: 'POST',
+                    headers: {
+                        'x-api-key': 'YOUR_PDF_CO_API_KEY' // Replace with your PDF.co API key
+                    },
+                    body: formData
+                });
+
+                const result = await response.json();
+                if (result.error) {
+                    throw new Error(result.message);
+                }
+
+                const downloadLink = document.getElementById('download-link');
+                downloadLink.href = result.url;
+                downloadLink.style.display = 'block';
+                downloadLink.download = 'merged.pdf';
+            } catch (error) {
+                alert('Error merging PDFs: ' + error.message);
+            }
+        });
+    </script>
+</body>
+</html>
